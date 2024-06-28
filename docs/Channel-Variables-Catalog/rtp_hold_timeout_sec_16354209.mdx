@@ -7,4 +7,10 @@
 
 integer
 
+`rtp_hold_timeout_sec` will modify the time for detecting RTP timeout when you hold in phone. If you don't set it, it will use `rtp_hold_timeout_sec = rtp_timeout_sec*10`.
+
+Of Course, you should use `media_timeout` and `media_hold_timeout` instead of `rtp_timeout_sec` and `rtp_hold_timeout_sec` in the future.
+
+In 1.10.7, you can continue to use it by my testing.
+
 
